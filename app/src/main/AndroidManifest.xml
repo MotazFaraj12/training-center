@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.trainingcenter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrainingCenter">
+        <activity
+            android:name=".View.Instructor.ViewLOS"
+            android:exported="false" />
+        <activity
+            android:name=".View.admin.MyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".View.admin.Registration_applications"
+            android:configChanges="orientation|screenSize"
+            android:label="Registration application" />
+        <activity
+            android:name=".View.admin.view_previous_offering_course"
+            android:configChanges="orientation|screenSize"
+            android:label="View all the sections of a course" />
+        <activity
+            android:name=".View.admin.View_profiles_from_admin"
+            android:configChanges="orientation|screenSize"
+            android:label="View the profiles" />
+        <activity
+            android:name=".View.admin.view_student_course"
+            android:configChanges="orientation|screenSize"
+            android:label="View the student of any course" />
+        <activity
+            android:name=".View.admin.make_available"
+            android:configChanges="orientation|screenSize"
+            android:label="Make a course available for registration" />
+        <activity
+            android:name=".View.admin.edit_delete_course"
+            android:configChanges="orientation|screenSize"
+            android:label="Edit or remove an existing course" />
+        <activity
+            android:name=".View.admin.home_admin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Home"/>
+        <activity
+            android:name=".View.admin.add_courses"
+            android:configChanges="orientation|screenSize"
+            android:label="Add a new course" />
+        <activity
+            android:name=".View.Instructor.ListOfStudents"
+            android:configChanges="orientation|screenSize"
+            android:label="Lectures" />
+        <activity
+            android:name=".View.Instructor.Schedule"
+            android:configChanges="orientation|screenSize"
+            android:label="Events"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".View.Instructor.Courses"
+            android:configChanges="orientation|screenSize"
+            android:label="Courses" />
+        <activity
+            android:name=".View.Instructor.MyProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="My Profile" />
+        <activity
+            android:name=".View.Instructor.Home"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Trainee.Settings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Trainee.Withdraw"
+            android:configChanges="orientation|screenSize"
+            android:label="Withdraw" />
+        <activity
+            android:name=".View.Trainee.MyCourses"
+            android:configChanges="orientation|screenSize"
+            android:label="My courses" />
+        <activity
+            android:name=".View.Trainee.CoursesHistory"
+            android:configChanges="orientation|screenSize"
+            android:label="Courses history" />
+        <activity
+            android:name=".View.Trainee.TraineeCourseHistory"
+            android:configChanges="orientation|screenSize"
+            android:label="My courses history" />
+        <activity
+            android:name=".View.Trainee.SearchCourses"
+            android:configChanges="orientation|screenSize"
+            android:label="Search courses" />
+        <activity
+            android:name=".View.Trainee.MyProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="My settings" />
+        <activity
+            android:name=".View.Trainee.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.SignupActivityInstructor"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignupActivityTrainee"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignupActivityAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".View.InitialActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

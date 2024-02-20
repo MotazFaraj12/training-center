@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebkg"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".View.SignUpActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Welcome to our family"
+                        android:textAlignment="center"
+                        android:textColor="@color/bright_orange"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        app:cardCornerRadius="120dp">
+
+                        <ImageView
+                            android:id="@+id/personalPhoto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/trainee_default"
+                            tools:srcCompat="@drawable/trainee_default" />
+                    </androidx.cardview.widget.CardView>
+
+                    <EditText
+                        android:id="@+id/signup_email_trainee"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="8dp"
+                        android:hint="Email"
+                        android:padding="8dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/signup_password_trainee"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_lock_24"
+                        android:drawablePadding="8dp"
+                        android:hint="Password"
+                        android:padding="8dp"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/signup_password_admin_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_lock_24"
+                        android:drawablePadding="8dp"
+                        android:hint="Confirm password"
+                        android:padding="8dp"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                        android:drawablePadding="8dp"
+                        android:hint="First name"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                        android:drawablePadding="8dp"
+                        android:hint="Last name"
+                        android:padding="8dp"
+                        android:textColor="@color/black" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="0dp"
+                        app:boxStrokeColor="@color/bright_orange"
+                        android:hint="@string/select"
+                        app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/cities"
+                            android:enabled="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <EditText
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_phone_24"
+                        android:drawablePadding="8dp"
+                        android:hint="Phone number"
+                        android:inputType="phone"
+                        android:padding="8dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/signup_button_trainee"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/bright_orange"
+                android:text="Sign Up"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:id="@+id/loginRedirectText_trainee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="Already an user? Login"
+                android:textColor="@color/bright_orange"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

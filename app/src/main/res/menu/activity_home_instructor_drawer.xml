@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_courses_ins"
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="Courses Taught" />
+        <item
+            android:id="@+id/nav_schedule_ins"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Current Schedule" />
+        <item
+            android:id="@+id/nav_LOS_ins"
+            android:icon="@drawable/baseline_people_outline_24"
+            android:title="List Of Students" />
+        <item
+            android:id="@+id/nav_myProfile"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+    </group>
+
+</menu>
